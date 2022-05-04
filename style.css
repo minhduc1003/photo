@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header__menu{
+    display: flex;
+    padding-top: 5.5rem;
+}
+.header__menu-link{
+    color: black;
+}
+.header__menu-link:hover{
+    color: #ccc;
+}
+.header__menu-item{
+    display: inline-block;
+    padding-inline:2rem;
+}
+.header{
+    padding: 4rem;
+}
+.col-style{
+    margin: 3rem;
+   position: relative;
+   padding: 0;
+   max-width: 540px;
+}
+
+.main__col-link{
+    position: relative;
+}
+.main__col-bg{
+    position: absolute;
+    background: rgba(247,63,63,0.9);
+    width: 540px;
+    height: 675px;
+     display: none; 
+}
+.col-style:hover .main__col-bg{
+    display: block;
+    animation: fadein linear .2s;
+}
+.main{
+    display: flex;
+    animation: fadein linear 1s;
+ }
+.row{
+    margin: auto;
+}
+.main__col-bg-content{
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    max-width: 15rem;
+    font-family: 'Lora', serif;
+    color: white;
+}
+/* .col-style:hover .main__col-link::before  {
+    display: block;
+} */
+
+/* .main__col-link::before{
+    content: "";
+    position: absolute;
+    background-color: lightcoral;
+    z-index: 1;
+    width: 540px;
+    height: 100%;
+    display: none;
+} */
+.logo-img{
+    width: 300px;
+    height: 200px;
+}
+.main__col-img{
+    width: 538px;
+    height: 673px;
+    object-fit: cover;
+    object-position: 100% 0;
+    cursor: pointer;
+}
+.main__col-img2{
+    width: 538px;
+    height: 673px;
+    object-fit:cover;
+    object-position: 0 100% ;
+}
+.main__col--img-col{
+    width: 538px;
+    height: 400px;
+    object-fit: cover;
+}
+.container{
+    max-width: 1500px;
+    position: relative;
+}
+.main__col-img3{
+    object-position: 50% 0% ;
+}
+.watch-img-full-size{  
+    background-color: rgb(255,255,255);
+    width:100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    display: none;
+}
+.watch-img{
+       /* display: none;     */
+        animation: fadein linear 1s; 
+       
+}
+.img-full-size{
+    display: flex;
+    margin: auto;
+    height: 900px;
+    /* object-fit: cover; */
+}
+.icon-close{
+    font-size: 30px;
+    margin: 30px 30px 0 0;
+}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        
+    }
+}
+ @media(max-width: 800px){
+    .header__menu{
+        display: none;
+    }
+    .logo{
+        padding-left: 90px;
+    }
+} 
+
